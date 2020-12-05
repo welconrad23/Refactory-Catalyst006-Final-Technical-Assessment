@@ -1,0 +1,19 @@
+doctype
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width,initial-scale=1.0')
+        title COVID TESTS FORM
+        link(rel='stylesheet' type='text/css' href='/css/style.css')
+        
+        style
+            footer { margin: 35px 0 15px 0; text-align: center }
+    body
+        main#main
+            .row.justify-content-center
+                div.col-md-10
+                    div.card-body
+                        block content
+                    block footer#footer
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js")
+        script(src="/js/validate.js")

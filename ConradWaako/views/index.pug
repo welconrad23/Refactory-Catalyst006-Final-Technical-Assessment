@@ -1,0 +1,55 @@
+extends layout
+
+block content
+
+    form(action="/", method="post" name="sops")
+        div(class="container")
+            .header 
+                img(src="/images/form-header-image.png" style="width:100%")
+            legend Ministry Of Health
+            h1 COVID-19(CORONA VIRUS)
+            h3 Virus-Test Registration Form
+            div.row-group
+                .left-container
+                    label Surname
+                    input(class="form-control" type="text", name="sname", id="sname")
+                .right-container
+                    label Given name
+                    input(class="form-control" type="text", id="gname" name="gname")
+            div.row-group
+                .left-container
+                    label Date of Birth
+                    input(class="form-control" type="date", id="date" name="date")
+                .right-container
+                    label Place of Residence
+                    input(class="form-control" type="place", id="place" name="place")
+            div.row-group
+                .left-container
+                    label Occupation
+                    input(class="form-control" type="text", id="job" name="job")
+                .right-container
+                    label Nationality
+                    input(class="form-control" type="text", id="country" name="country")
+            div.form-row
+                div.col.form-group
+                    label.form-check.form-check-inline Gender
+                        input.form-check-input(type="radio" name="gender" value="female")
+                        span.form-check-label Female 
+                    label.form-check.form-check-inline
+                        input.form-check-input(type="radio" name="gender" value="male" checked)
+                        span.form-check-label Male 
+                        br
+            div.form-row
+                label Please choose a description:
+                select#category(name="category")
+                    option(value="0") --Select Category--
+                    option(value="Returnee") Returnee
+                    option(value="Contact") Contact
+                    option(value="Alert") Alert
+                    option(value="Volunteer") Volunteer
+                    br
+            div.row
+                button(id="registr" type="button") Register
+                br
+
+            

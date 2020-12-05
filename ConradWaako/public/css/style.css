@@ -1,0 +1,27 @@
+.form-control {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.row-group {
+    width: 100%;
+    display: grid;
+}
+
+legend,
+h1,
+h3 {
+    text-align: center;
+}
+
+.left-container {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.right-container {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
